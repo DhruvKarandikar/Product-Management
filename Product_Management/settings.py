@@ -97,10 +97,10 @@ WSGI_APPLICATION = 'Product_Management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get("DBNAME"),
-        'USER': os.environ.get("DBUSER"),
-        'PASSWORD': os.environ.get("DBPASSWORD"),
-        'HOST': os.environ.get("DBHOST"),
+        'NAME': "prod_management",
+        'USER': "postgres",
+        'PASSWORD': "admin",
+        'HOST': "postgres",
         'PORT': '5432',
         'ATOMIC_REQUESTS': True,
     }
