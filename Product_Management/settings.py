@@ -21,13 +21,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY = 'django-insecure-m7j8374u4k(fe73+tdjr17bhnn)*=n4entlcv8mg8p!i8ky#17'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # swagger settings
 SWAGGER_SETTINGS = {
@@ -96,15 +97,14 @@ WSGI_APPLICATION = 'Product_Management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get("POSTGRES_NAME"),
-        'USER': os.environ.get("POSTGRES_USER"),
-        'PASSWORD': os.environ.get("POSTGRES_PASSWORD"),
-        'HOST': os.environ.get("POSTGRES_HOST"),
+        'NAME': os.environ.get("DBNAME"),
+        'USER': os.environ.get("DBUSER"),
+        'PASSWORD': os.environ.get("DBPASSWORD"),
+        'HOST': os.environ.get("DBHOST"),
         'PORT': '5432',
         'ATOMIC_REQUESTS': True,
     }
 }
-
 
 
 # Password validation

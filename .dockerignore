@@ -1,0 +1,19 @@
+# Git
+.git
+.gitignore
+
+# Docker
+.docker
+
+# Python
+django/__pycached__/
+django/*/__pycached__/
+django/*/*/__pycached__/
+django/*/*/*/__pycached__/
+.env/
+.venv/
+venv/
+env/
+
+# Local PostgreSQL data
+data/

@@ -28,4 +28,6 @@ logs
 .env
 env/
 .vscode
+data/
+.data
 
